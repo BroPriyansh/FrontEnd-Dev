@@ -1,0 +1,33 @@
+/* Question 5 CSS: Advanced Selectors */
+/* Attribute selector: selects inputs with type="text" */
+input[type="text"]{ border:2px solid #cbd5e0; padding:8px; border-radius:6px; }
+
+/* Attribute selector that targets links starting with https */
+a[href^="https"]{ font-weight:600; text-decoration:underline; color:#2b6cb0; }
+
+/* Pseudo-class :hover */
+.links a:hover{ opacity:0.8; }
+
+/* Pseudo-class :focus */
+input:focus{ outline:3px solid #90cdf4; outline-offset:3px; }
+
+/* nth-child demonstration */
+.items li:nth-child(odd){ background:#f7fafc; padding:8px; }
+
+/* pseudo-elements ::before and ::after */
+/* add decorative bullets to the beginning of title */
+h1::before{ content:"★ "; }
+h1::after{ content:" — selectors"; color:#4a5568; font-weight:400; font-size:0.9rem; margin-left:6px; }
+
+/* Combinators examples */
+/* child combinator: selects direct li child of ol */
+ol > li{ margin:6px 0; }
+
+/* adjacent sibling combinator: style list item immediately after another */
+.items li + li{ border-top:1px dashed #e2e8f0; padding-top:6px; }
+
+/* general sibling combinator: target any following links */
+.links a ~ a{ margin-left:6px; opacity:0.95; }
+
+/* descendant combinator: style any anchor inside .links */
+.links a{ display:inline-block; margin:6px 0; }

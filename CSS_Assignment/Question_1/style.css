@@ -1,0 +1,41 @@
+/* Question 1 CSS: Borders & Padding Demonstration */
+/* Layout: horizontal alignment using Flexbox */
+body{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin: 0; padding: 24px; background:#f6f7fb; color:#111;
+}
+header, footer{ text-align:center; margin-bottom:12px; }
+.container{
+  display:flex;
+  gap:16px;
+  align-items:flex-start;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.box{
+  width:170px;
+  min-height:80px;
+  background:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  transition: border-color 0.25s ease, transform 0.2s ease;
+  cursor:default;
+}
+.box span{ display:block; margin-top:8px; font-size:0.85rem; color:#555;}
+
+/* Different border styles and padding values */
+.solid{ border:3px solid #2b6cb0; padding:8px; }
+.dashed{ border:3px dashed #d69e2e; padding:16px; }
+.double{ border:4px double #38a169; padding:24px; }
+.groove{ border:4px groove #805ad5; padding:32px; }
+
+/* rounded corners example */
+.rounded{ border:2px solid #e53e3e; border-radius:16px; padding:20px; }
+
+/* Hover effect changes border color smoothly */
+.box:hover{ border-color:#ff6b6b; transform: translateY(-4px); }
+
+/* Accessibility: increase contrast when focused */
+.box:focus{ outline:3px solid #00000033; }

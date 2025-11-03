@@ -1,0 +1,28 @@
+/* Question 3 CSS: Gradient Backgrounds */
+/* Fixed header and footer */
+*{box-sizing:border-box;margin:0;padding:0}
+body{ font-family: system-ui, -apple-system, "Segoe UI", Roboto; color:#111; }
+.site-header, .site-footer{
+  position:fixed; left:0; right:0; height:60px; display:flex;
+  align-items:center; justify-content:center; background:#ffffffcc; backdrop-filter: blur(4px);
+  z-index:10;
+}
+.site-header{ top:0; border-bottom:1px solid #eee; }
+.site-footer{ bottom:0; border-top:1px solid #eee; }
+
+main{ padding-top:80px; padding-bottom:80px; }
+
+.linear{
+  min-height:55vh;
+  display:flex; align-items:center; justify-content:center; text-align:center;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+}
+.radial{
+  min-height:55vh;
+  display:flex; align-items:center; justify-content:center; text-align:center;
+  /* radial gradient and fixed attachment for parallax-like effect */
+  background: radial-gradient(circle at 20% 20%, #a1c4fd 0%, #c2e9fb 40%, #e2f0ff 100%);
+  background-attachment: fixed;
+}
+main h2{ font-size:2rem; margin-bottom:8px; }
+main p{ opacity:0.9; }

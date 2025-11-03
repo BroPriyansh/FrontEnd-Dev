@@ -1,0 +1,22 @@
+/* Question 9 CSS: Outline & Focus Styling Form */
+/* Basic form layout */
+body{ font-family: system-ui; margin:24px; background:#f3f4f6; }
+.form-wrap{ display:flex; align-items:center; justify-content:center; min-height:80vh; }
+.nice-form{ display:flex; flex-direction:column; gap:12px; background:#fff; padding:18px; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,0.06); width:360px; }
+
+.nice-form label{ display:flex; flex-direction:column; font-size:0.95rem; color:#111; }
+.nice-form input, .nice-form textarea{
+  padding:10px; border-radius:8px; border:1px solid #e2e8f0; font-size:0.95rem;
+  transition: box-shadow 0.18s ease, outline-color 0.18s ease;
+  outline: none;
+}
+
+/* Different outline styles and offset */
+.nice-form input:focus, .nice-form textarea:focus{
+  outline: 3px solid rgba(59,130,246,0.25);
+  outline-offset:4px;
+  box-shadow: 0 6px 14px rgba(59,130,246,0.06);
+}
+
+/* subtle button style */
+.nice-form button{ padding:10px 12px; border-radius:8px; border:none; background:#2563eb; color:#fff; cursor:pointer; }

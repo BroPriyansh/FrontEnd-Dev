@@ -1,0 +1,18 @@
+/* Question 7 CSS: Typography & Text Styling */
+body{ background:#fff; font-family: 'Georgia', serif; margin:24px; color:#111; }
+.article{ max-width:720px; margin:0 auto; line-height:1.6; }
+h1{ font-size:2rem; margin-bottom:12px; text-align:left; }
+.mono{ font-family: "Courier New", monospace; }
+.serif{ font-family: Georgia, "Times New Roman", serif; }
+.sans{ font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+
+/* mark, strong, em styling */
+mark{ background:#fff3b0; padding:0 4px; border-radius:2px; }
+strong{ color:#1a202c; font-weight:700; }
+em{ color:#4a5568; font-style:italic; }
+
+.lead{ font-size:1.05rem; letter-spacing:0.2px; text-align:justify; }
+
+/* ::first-letter and ::first-line */
+.lead::first-letter{ font-size:2.4rem; font-weight:700; float:left; line-height:0.8; margin-right:8px; }
+.lead::first-line{ text-transform:uppercase; letter-spacing:1px; }
