@@ -1,0 +1,33 @@
+
+/* Simple reset and common helpers */
+*{box-sizing: border-box;}
+html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
+.container{max-width:1100px;margin:0 auto;padding:20px;}
+.center{display:flex;align-items:center;justify-content:center;}
+.card{background:#fff;border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(0,0,0,0.08);}
+
+/* Element selector: style all paragraphs */
+p{line-height:1.5;}
+
+/* Class selector: .highlight — used to emphasize text */
+/* This rule adds background and padding to elements with .highlight */
+.highlight{background:#fff3bf;padding:8px;border-radius:6px;}
+
+/* ID selector: #special — more specific */
+#special{font-weight:600;color:#0b5;/* small example */}
+
+/* Attribute selector: links with title attribute */
+a[title]{text-decoration:underline dotted;}
+
+/* Combinators */
+/* Parent > child */
+.parent > .child{padding:8px;background:#eef7ff;border-radius:6px;}
+
+/* Adjacent sibling (plus) - the element immediately after */
+.parent > .child + p.sibling{margin-top:6px;font-style:italic;}
+
+/* General sibling (~) */
+.parent ~ p{opacity:.9;}
+
+/* Basic layout */
+.card{padding:18px;}

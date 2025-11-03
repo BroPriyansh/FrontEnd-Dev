@@ -1,0 +1,31 @@
+
+/* Simple reset and common helpers */
+*{box-sizing: border-box;}
+html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
+.container{max-width:1100px;margin:0 auto;padding:20px;}
+.center{display:flex;align-items:center;justify-content:center;}
+.card{background:#fff;border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(0,0,0,0.08);}
+
+/* Question 1 specific styles */
+/* Align examples in a row using Flexbox */
+.examples{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start;}
+.example{flex:1 1 220px;padding:12px;border-radius:10px;background:linear-gradient(180deg,#f7f9fc,#ffffff);min-width:200px;}
+
+/* :hover on links */
+.link{display:inline-block;padding:8px 12px;border-radius:6px;text-decoration:none;background:transparent;color:#0b66ff;transition:all .18s ease;}
+.link:hover{background:#e8f0ff;color:#063a9a;text-decoration:underline;}
+
+/* :focus on buttons */
+.btn{padding:10px 14px;border-radius:8px;border:1px solid #cbd5e1;background:#fff;cursor:pointer;transition:transform .12s ease,box-shadow .12s ease;}
+.btn:focus{outline:3px solid rgba(11,102,255,0.18);transform:translateY(-1px);}
+
+/* :active on button */
+.active-demo:active{transform:scale(.98);box-shadow:inset 0 2px 6px rgba(0,0,0,0.08);}
+
+/* :nth-child example */
+.demo-list{list-style:none;padding:0;margin:8px 0;}
+.demo-list li{padding:8px;border-radius:6px;margin-bottom:6px;background:#f3f4f6;}
+.demo-list li:nth-child(2n){background:#e6f0ff;}
+
+/* Responsive */
+@media (max-width:700px){.examples{flex-direction:column;}}

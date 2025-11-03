@@ -1,0 +1,31 @@
+
+/* Simple reset and common helpers */
+*{box-sizing: border-box;}
+html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
+.container{max-width:1100px;margin:0 auto;padding:20px;}
+.center{display:flex;align-items:center;justify-content:center;}
+.card{background:#fff;border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(0,0,0,0.08);}
+
+/* Center everything */
+.center{min-height:100vh;}
+
+/* Tooltip row uses Flexbox */
+.tooltip-row{display:flex;gap:24px;align-items:center;}
+
+/* Each tooltip wrapper is positioned relative */
+.tip{position:relative;display:inline-block;cursor:default;}
+
+/* Trigger appearance */
+.trigger{padding:10px 14px;border-radius:8px;border:1px solid #e2e8f0;display:inline-block;}
+
+/* Tooltip itself is absolutely positioned and hidden by default */
+.tooltip{position:absolute;left:50%;transform:translateX(-50%) translateY(6px);bottom:100%;white-space:nowrap;padding:8px 10px;border-radius:8px;font-size:14px;background:#111;color:#fff;opacity:0;pointer-events:none;transition:opacity .3s ease-in-out,transform .3s ease-in-out;z-index:20;}
+
+/* Fade in on hover */
+.tip:hover .tooltip, .tip:focus-within .tooltip{opacity:1;transform:translateX(-50%) translateY(0);pointer-events:auto;}
+
+/* Tooltip arrow (CSS) */
+.tooltip::after{content:'';position:absolute;left:50%;transform:translateX(-50%);bottom:-6px;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:6px solid #111;}
+
+/* Ensure tooltip stays readable */
+@media (max-width:480px){.tooltip{font-size:13px;}}

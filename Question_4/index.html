@@ -1,0 +1,33 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Question 4 — CSS Selectors Practice</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="container"><h1>Selectors Practice</h1></header>
+  <main class="container card">
+    <section>
+      <h2>Selectors demo</h2>
+      <p>This paragraph uses an element selector.</p>
+      <p class="highlight">This paragraph uses a <code>.highlight</code> class selector.</p>
+      <p id="special">This paragraph uses an <code>#special</code> ID selector.</p>
+
+      <p><a href="#" title="sample">A link with an attribute</a></p>
+
+      <div class="box">
+        <p>Parent &gt; child combinator demo:</p>
+        <div class="parent">
+          <p class="child">Direct child (parent &gt; .child)</p>
+          <p>Sibling below</p>
+          <p class="sibling">+ adjacent sibling selector demo</p>
+        </div>
+        <p>~ general sibling selector demo</p>
+      </div>
+    </section>
+  </main>
+  <footer class="container"><small>Comments in CSS describe the purpose of each rule.</small></footer>
+</body>
+</html>

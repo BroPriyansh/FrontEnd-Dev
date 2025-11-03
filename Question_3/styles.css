@@ -1,0 +1,24 @@
+
+/* Simple reset and common helpers */
+*{box-sizing: border-box;}
+html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
+.container{max-width:1100px;margin:0 auto;padding:20px;}
+.center{display:flex;align-items:center;justify-content:center;}
+.card{background:#fff;border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(0,0,0,0.08);}
+
+/* Gallery grid using CSS Grid */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:12px;}
+.gallery figure{position:relative;overflow:hidden;border-radius:12px;box-shadow:0 8px 20px rgba(2,6,23,0.08);background:#fff;}
+.gallery img{display:block;width:100%;height:220px;object-fit:cover;transition:transform .28s ease,filter .28s ease;}
+
+/* overlay */
+.gallery figure::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,0);transition:background .28s ease;}
+.gallery figure:hover img{transform:scale(1.08);}
+.gallery figure:hover::after{background:rgba(0,0,0,0.22);}
+
+/* caption */
+figcaption{padding:10px 12px;font-size:14px;background:transparent;}
+
+/* Rounded corners already applied; responsive behavior */
+@media (max-width:900px){.gallery{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:700px){.gallery{grid-template-columns:1fr;} .gallery img{height:260px;}}

@@ -1,0 +1,33 @@
+
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Question 10 — Mini UI Layout</title>
+<link rel="stylesheet" href="styles.css"></head>
+<body style="background:#f8fafc;">
+  <header class="container"><h1>Mini UI</h1></header>
+  <main class="container center">
+    <section class="card" style="width:100%;max-width:720px;display:flex;gap:18px;flex-direction:column;">
+      <div style="display:flex;gap:12px;align-items:center;">
+        <img src="images/avatar.svg" alt="small image" width="68" height="68" style="border-radius:10px;">
+        <div>
+          <h2>Welcome</h2>
+          <p style="margin:0;font-size:14px;color:#475569;">A compact card with a simple form.</p>
+        </div>
+      </div>
+
+      <form style="display:flex;flex-direction:column;gap:10px;">
+        <label for="name">Name</label>
+        <input id="name" placeholder="Your name">
+
+        <label for="email">Email</label>
+        <input id="email" placeholder="you@example.com">
+
+        <div style="display:flex;gap:10px;">
+          <button class="btn primary" type="submit">Submit</button>
+          <button class="btn outline" type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="container" style="padding:18px 20px;"><small>Footer — made responsive with Flexbox.</small></footer>
+</body></html>

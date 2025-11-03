@@ -1,0 +1,47 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Question 1 — Pseudo-classes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="container"><h1>Pseudo-Classes Examples</h1></header>
+  <main class="container">
+    <section class="examples" aria-label="pseudo-classes examples">
+      <article class="example">
+        <h2>:hover (links)</h2>
+        <p>Hover the link to change its background and underline style.</p>
+        <a href="#" class="link">Hover me (link)</a>
+      </article>
+
+      <article class="example">
+        <h2>:focus (button)</h2>
+        <p>Use Tab to focus the button and see focus outline.</p>
+        <button class="btn">Focusable Button</button>
+      </article>
+
+      <article class="example">
+        <h2>:active (button)</h2>
+        <p>Press (click/hold) the button to see active state.</p>
+        <button class="btn active-demo">Click and hold</button>
+      </article>
+
+      <article class="example">
+        <h2>:nth-child() (list)</h2>
+        <p>Styling every 2nd list item using nth-child(2n).</p>
+        <ul class="demo-list">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+          <li>Item 5</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+  <footer class="container"><small>Uses Flexbox to align examples.</small></footer>
+</body>
+</html>
