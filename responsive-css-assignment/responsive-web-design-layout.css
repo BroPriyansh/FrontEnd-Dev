@@ -1,0 +1,89 @@
+/* Responsive Web Design Layout
+   - Flex header: logo left, nav right
+   - 3 feature boxes (row -> column below 750px)
+   - Hover scale-up transition
+*/
+
+:root {
+  --pad: 1rem;
+  --shadow: 0 8px 20px rgba(0,0,0,.06);
+  --radius: 14px;
+  --gap: 1rem;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #0f172a;
+  background: #f8fafc;
+  line-height: 1.6;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.site-header {
+  background: white;
+  box-shadow: var(--shadow);
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* logo left, nav right */
+  padding: .9rem 0;
+}
+
+.brand { font-size: 1.25rem; }
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #0f172a;
+  padding: .5rem .75rem;
+  border-radius: 8px;
+}
+
+.nav a:hover { background: #e2e8f0; }
+
+.features {
+  display: flex;
+  gap: var(--gap);
+  padding: 1.25rem 0;
+}
+
+.feature-box {
+  flex: 1 1 0;
+  background: white;
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.feature-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 28px rgba(0,0,0,.09);
+}
+
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 750px) {
+  .features {
+    flex-direction: column; /* stack vertically */
+  }
+}

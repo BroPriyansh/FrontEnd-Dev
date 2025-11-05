@@ -1,0 +1,77 @@
+/* Filter Cards with Animation
+   - 3 profile cards via Flexbox
+   - Images filtered (grayscale/sepia), lifted on hover
+   - Fade-in @keyframes on page load
+   - Stack vertically below 800px
+*/
+
+:root {
+  --gap: 1rem;
+  --radius: 16px;
+  --shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #f1f5f9;
+  color: #0f172a;
+  animation: fadeIn .6s ease-out both;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+header, footer {
+  text-align: center;
+  padding: 1rem;
+  background: white;
+  box-shadow: var(--shadow);
+}
+
+.profiles {
+  width: min(1100px, 92%);
+  margin: 1.25rem auto;
+  display: flex;
+  gap: var(--gap);
+}
+
+.card {
+  flex: 1 1 0;
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 36px rgba(0,0,0,.12);
+}
+
+figure { margin: 0; }
+img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: filter .3s ease;
+}
+
+.img-filter { filter: grayscale(100%); }
+.img-filter.sepia { filter: sepia(100%); }
+
+.card:hover img { filter: none; }
+
+.card p {
+  padding: 1rem 1rem 1.25rem;
+}
+
+@media (max-width: 800px) {
+  .profiles { flex-direction: column; }
+  img { height: 260px; }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Design Principles Summary</title>
+  <link rel="stylesheet" href="responsive-design-principles-summary.css" />
+</head>
+<body>
+  <header>
+    <h1>Responsive Design Principles</h1>
+  </header>
+  <main>
+    <section class="principles" aria-label="Principles grid">
+      <article class="box">
+        <h2>Fluid Layouts</h2>
+        <p>Use relative units like %, fr, and minmax() to allow content to reflow.</p>
+        <pre><code>.container { width: min(1100px, 92%); }</code></pre>
+      </article>
+      <article class="box">
+        <h2>Flexible Media</h2>
+        <p>Make images and videos scale within their containers.</p>
+        <pre><code>img { max-width: 100%; height: auto; }</code></pre>
+      </article>
+      <article class="box">
+        <h2>Breakpoints</h2>
+        <p>Introduce layout changes at meaningful viewport widths.</p>
+        <pre><code>@media (max-width: 700px) { … }</code></pre>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Responsive CSS Demos</p>
+  </footer>
+</body>
+</html>

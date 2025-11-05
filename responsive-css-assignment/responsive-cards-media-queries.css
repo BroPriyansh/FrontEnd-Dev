@@ -1,0 +1,58 @@
+/* Responsive Cards with Media Queries
+   - Flex row of 4 -> 2 columns (<=900px) -> 1 column (<=600px)
+   - Equal spacing and hover background change
+*/
+
+:root {
+  --gap: 1rem;
+  --radius: 14px;
+  --shadow: 0 8px 20px rgba(0,0,0,.06);
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+header, footer {
+  text-align: center;
+  padding: 1rem;
+  background: white;
+  box-shadow: var(--shadow);
+}
+
+.cards {
+  width: min(1100px, 92%);
+  margin: 1.25rem auto;
+  display: flex;
+  gap: var(--gap);
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 calc(25% - var(--gap));
+  min-width: 220px;
+  background: white;
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  transition: background-color .25s ease, transform .25s ease;
+}
+
+.card:hover {
+  background: #e2e8f0;
+  transform: translateY(-4px);
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .card { flex-basis: calc(50% - var(--gap)); }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .card { flex-basis: 100%; }
+}

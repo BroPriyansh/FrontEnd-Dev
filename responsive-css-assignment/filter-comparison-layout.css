@@ -1,0 +1,65 @@
+/* Filter Comparison Layout
+   - Two images side-by-side on desktop
+   - Right image filtered; filter fades away on hover
+   - Stack vertically below 700px
+*/
+
+:root {
+  --gap: 1rem;
+  --radius: 14px;
+  --shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #0f172a;
+  background: #f1f5f9;
+}
+
+header, footer {
+  text-align: center;
+  padding: 1rem;
+  background: white;
+  box-shadow: var(--shadow);
+}
+
+.comparison {
+  width: min(1100px, 92%);
+  margin: 1.25rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+}
+
+figure {
+  margin: 0;
+  background: white;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.filtered {
+  filter: brightness(0.65);
+  transition: filter .3s ease;
+}
+figure:hover .filtered { filter: none; }
+
+figcaption {
+  text-align: center;
+  padding: .5rem .75rem;
+}
+
+@media (max-width: 700px) {
+  .comparison { grid-template-columns: 1fr; } /* stack */
+  img { height: 240px; }
+}

@@ -1,0 +1,85 @@
+/* Responsive Image Filter Gallery
+   - Grid layout using auto-fit/minmax
+   - Different CSS filter per image
+   - Hover removes filter smoothly
+   - Below 600px: single column
+*/
+
+:root {
+  --gap: 1rem;
+  --radius: 12px;
+  --shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background: #f7f7fb;
+}
+
+header, footer {
+  text-align: center;
+  padding: 1.25rem;
+  background: white;
+  box-shadow: var(--shadow);
+}
+
+main {
+  padding: 1.25rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--gap);
+}
+
+figure {
+  margin: 0;
+  background: white;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+figure img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: filter .35s ease, transform .35s ease;
+  display: block;
+}
+
+/* Individual filters */
+.f-blur { filter: blur(2px); }
+.f-grayscale { filter: grayscale(100%); }
+.f-sepia { filter: sepia(100%); }
+.f-brightness { filter: brightness(0.7); }
+.f-contrast { filter: contrast(180%); }
+.f-hue { filter: hue-rotate(120deg); }
+
+/* Hover: remove filter */
+figure:hover img {
+  filter: none;
+  transform: scale(1.02);
+}
+
+figcaption {
+  padding: .75rem 1rem;
+  font-weight: 600;
+  text-align: center;
+  background: #fff;
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr; /* Stack into one column */
+  }
+  figure img {
+    height: 240px;
+  }
+}

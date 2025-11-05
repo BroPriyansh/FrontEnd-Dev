@@ -1,0 +1,59 @@
+/* Responsive CSS Cheat Sheet
+   - Grid with 2–3 columns on large screens
+   - Below 700px: stacked rows (key -> value style)
+   - Hover transitions for interactivity
+*/
+
+:root {
+  --gap: 1rem;
+  --radius: 16px;
+  --shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+header, footer {
+  text-align: center;
+  padding: 1rem;
+  background: white;
+  box-shadow: var(--shadow);
+}
+
+.cheatsheet {
+  width: min(1100px, 92%);
+  margin: 1.25rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+}
+
+.box {
+  background: white;
+  padding: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
+}
+
+.box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0,0,0,.12);
+}
+
+@media (max-width: 1000px) {
+  .cheatsheet { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 700px) {
+  .cheatsheet {
+    grid-template-columns: 1fr; /* stacked rows */
+  }
+  .box h2 { margin-bottom: .25rem; }
+  .box p { margin-top: 0; }
+}

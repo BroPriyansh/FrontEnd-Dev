@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Combined Responsive Web Demo</title>
+  <link rel="stylesheet" href="combined-responsive-web-demo.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1>Responsive Web Demo</h1>
+      <nav aria-label="Primary">
+        <ul class="nav">
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#explain">What is Responsive?</a></li>
+          <li><a href="#cheat">Cheat Sheet</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container fade">
+    <section id="gallery" class="grid-item">
+      <h2>Image Gallery</h2>
+      <div class="gallery">
+        <figure><img src="https://picsum.photos/seed/a/800/600" alt="Gallery image A"><figcaption>Sample A</figcaption></figure>
+        <figure><img src="https://picsum.photos/seed/b/800/600" alt="Gallery image B"><figcaption>Sample B</figcaption></figure>
+        <figure><img src="https://picsum.photos/seed/c/800/600" alt="Gallery image C"><figcaption>Sample C</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="explain" class="grid-item">
+      <h2>Responsive Design</h2>
+      <p>
+        Responsive design uses flexible layouts, media queries, and scalable typography to
+        provide an optimal experience across devices.
+      </p>
+    </section>
+
+    <section id="cheat" class="grid-item">
+      <h2>Cheat Sheet Preview</h2>
+      <ul class="cheat-list">
+        <li><strong>Filters:</strong> filter: grayscale(100%);</li>
+        <li><strong>Media Queries:</strong> @media (max-width: 700px) { … }</li>
+        <li><strong>Typography:</strong> font-size: clamp(1rem, 2vw, 1.5rem);</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Contact: hello@example.com</p>
+  </footer>
+</body>
+</html>
