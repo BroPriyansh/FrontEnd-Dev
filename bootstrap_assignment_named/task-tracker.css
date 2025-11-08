@@ -1,0 +1,4 @@
+/* q7.css - Task Tracker */
+body { background: #ffffff; }
+.list-group-item { transition: background .15s; }
+.list-group-item:hover { background: #f8f9fa; }

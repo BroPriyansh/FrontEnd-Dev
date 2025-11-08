@@ -1,0 +1,4 @@
+/* q1.css - Styles for Company Landing Page */
+/* Keep Bootstrap utilities for layout; small custom rules below */
+body { background: #fff; }
+header .nav-link:hover { text-decoration: underline; }

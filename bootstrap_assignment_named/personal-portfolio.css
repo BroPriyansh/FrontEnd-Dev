@@ -1,0 +1,5 @@
+/* q2.css - Personal Portfolio */
+body { background: #f8f9fa; }
+p { color: #333; }
+.w-md-50 { max-width: 540px; }
+/* Utility comments: using Bootstrap classes like .img-fluid, .rounded-circle, .form-control */

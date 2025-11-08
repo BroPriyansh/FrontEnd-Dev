@@ -1,0 +1,4 @@
+/* q3.css - Product Catalog */
+/* Hover shadow and transition */
+.product-card { transition: transform .2s ease, box-shadow .2s ease; }
+.product-card:hover { transform: translateY(-6px); box-shadow: 0 10px 30px rgba(0,0,0,0.12); }

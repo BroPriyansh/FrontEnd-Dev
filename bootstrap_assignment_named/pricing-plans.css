@@ -1,0 +1,4 @@
+/* q8.css - Pricing Plans */
+/* Highlight card styles */
+.card { border-radius: .75rem; transition: transform .2s; }
+.card:hover { transform: translateY(-6px); }
