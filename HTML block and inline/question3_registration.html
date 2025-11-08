@@ -1,0 +1,65 @@
+<!-- Question 3: Course Registration Form -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Course Registration</title>
+</head>
+<body>
+  <h1>Course Registration Form</h1>
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Student Details</legend>
+
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Your full name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Course Selection</legend>
+
+      <label for="course">Choose a course:</label><br>
+      <select id="course" name="course">
+        <option value="html" selected>HTML Fundamentals</option>
+        <option value="css">CSS Basics</option>
+        <option value="js">JavaScript Essentials</option>
+        <option value="python">Intro to Python</option>
+      </select><br><br>
+    </fieldset>
+
+    <p><em>(Note: This is a structure-only form — no styling or scripts.)</em></p>
+  </form>
+
+  <h2>Available Course Schedules</h2>
+  <table border="1" cellpadding="5" cellspacing="0" title="Course Schedules">
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>Time</th>
+        <th>Instructor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Monday</td>
+        <td>10:00 AM - 12:00 PM</td>
+        <td>Dr. A. Example</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>2:00 PM - 4:00 PM</td>
+        <td>Ms. B. Sample</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>6:00 PM - 8:00 PM</td>
+        <td>Mr. C. Instructor</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

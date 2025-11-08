@@ -1,0 +1,61 @@
+<!-- Question 2: Product Catalog Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Product Catalog</title>
+</head>
+<body>
+  <h1>Online Store - Product Catalog</h1>
+
+  <table border="1" cellpadding="6" cellspacing="0" title="Product Catalog">
+    <caption>Available Products</caption>
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Availability</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">
+          <img src="https://via.placeholder.com/120" alt="Product A" /> <br/>Product A
+        </td>
+        <td>Compact wireless headphones with long battery life.</td>
+        <td>$59.99</td>
+        <td>In Stock</td>
+      </tr>
+      <tr>
+        <!-- Using rowspan and colspan: product A has two rows for a larger image cell above -->
+        <td colspan="2">Special offer: 1-year warranty included.</td>
+        <td>Ships in 2 days</td>
+      </tr>
+
+      <tr>
+        <td>
+          <img src="https://via.placeholder.com/120" alt="Product B" /> <br/>Product B
+        </td>
+        <td>Stainless steel travel mug, 500ml capacity.</td>
+        <td>$19.50</td>
+        <td>Out of Stock</td>
+      </tr>
+
+      <tr>
+        <td>
+          <img src="https://via.placeholder.com/120" alt="Product C" /> <br/>Product C
+        </td>
+        <td>Bluetooth speaker with rich bass and compact design.</td>
+        <td>$39.00</td>
+        <td>In Stock</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4"><small>Prices are in USD. Images are placeholders.</small></td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
