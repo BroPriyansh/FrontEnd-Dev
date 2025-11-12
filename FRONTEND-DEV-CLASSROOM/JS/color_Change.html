@@ -6,21 +6,21 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class=" text-center bg-black flex justify-center flex-col text-white">
-  <h1 class="text-4xl font-bold text-blue-500 text-center mt-10">
-    Color Chnage Buttons
-  </h1>
-  <h3 class="text-2xl font-bold text-blue-500 text-center mt-7">Color Changer</h3>
- <div class="w-[80%] mx-auto p-8">
-  <div class="flex justify-center space-x-4">
-    <span class="button bg-orange-500 p-10 border rounded" id = "orange"></span>
-    <span class="button bg-red-500 p-10 border rounded" id = "red"></span>
-    <span class="button bg-green-500 p-10 border rounded" id = "green"></span>
-    <span class="button bg-gray-500 p-10 border rounded" id = "gray"></span>
-  </div>
-  <h2 class="w-[50%] p-10 flex justify-center flex-col ">
-    Try clicking on one of the colors above
-    <span>to change the background color of this page!</span>
-  </h2>
+    <h1 class="text-4xl font-bold text-blue-500 text-center mt-10">
+        Color Change Buttons
+    </h1>
+    <h3 class="text-2xl font-bold text-blue-500 text-center mt-7">Color Changer</h3>
+    <div class="w-[80%] mx-auto p-8">
+    <div class="flex justify-center space-x-4">
+        <span class="button bg-orange-500 p-10 border rounded cursor-pointer" id = "orange"></span>
+        <span class="button bg-red-500 p-10 border rounded cursor-pointer" id = "red"></span>
+        <span class="button bg-green-500 p-10 border rounded cursor-pointer" id = "green"></span>
+        <span class="button bg-gray-500 p-10 border rounded cursor-pointer" id = "gray"></span>
+    </div>
+    <h2 class="w-[50%] p-10 flex justify-center flex-col ">
+        Try clicking on one of the colors above
+        <span>to change the background color of this page!</span>
+    </h2>
 </div>
 </body>
 
@@ -33,8 +33,6 @@
     console.log(button);
 
     button.addEventListener('click' , function(e){
-      console.log(e);
-      console.log(e.target);
       body.style.backgroundColor = e.target.id;
 
     })
