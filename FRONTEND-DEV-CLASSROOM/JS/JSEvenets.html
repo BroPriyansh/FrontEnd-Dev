@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS EVENTS</title>
+</head>
+<body>
+    
+    <h1>JS Events</h1>
+    <button onclick="myFun()">Click Me!</button>
+    <button ondblclick="dbFun()">Double Click Me!</button>
+    <button id="btn">Count Clicks</button>
+    <script>
+        function myFun() {
+            alert("clicked!");
+        }
+
+        function dbFun() {
+            alert("doubele clicked!");
+        }
+
+        const btnEl = document.getElementById("btn");
+        let count = 0;
+        btnEl.addEventListener("dblclick", () => {
+            count++;
+            console.log("Button clicked " + count + " times");
+        });
+    </script>
+</body>
+</html>
