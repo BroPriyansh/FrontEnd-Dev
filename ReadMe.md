@@ -19,6 +19,7 @@ The course introduces core frontend concepts, starting from *HTML, progressing t
 7. *CSS Model*
 8. *CSS Pseudo-Classes and Animations*
 9. *Responsive CSS*
+10. BootStrap
 ---
 
 ## 🗂 Repository Structure
@@ -35,6 +36,7 @@ The course introduces core frontend concepts, starting from *HTML, progressing t
 | css-model | CSS Box Model, borders, padding, height/width, gradients |
 | css-classes | Pseudo-classes, transitions, animations, and transforms |
 | responsive-css | Filters, responsive web design, and media queries |
+| BootStrap | HTML CSS Library |
 
 ---
 
@@ -49,7 +51,8 @@ The course introduces core frontend concepts, starting from *HTML, progressing t
 | Oct 16 | *Submission of CSS Basics* | Applied basic CSS styling and layout |
 | Oct 16 | *Submission of CSS Flexbox and Grid* | Built a responsive layout using Flexbox and Grid |
 | Oct 31 | *Submission of CSS Model* | Created a calculator layout using Grid and demonstrated gradients |
-| Oct 31 | *Submission of Pseudo Classes* | Implemented pseudo-classes, animations, transitions, and tooltips |
+| Oct 31 | *Submission of Pseudo Classes* | Implemented pseudo-classes, animations, transitions, and tooltips | 
+| Nov 10 | *Submission of BootStrap* | Use BootStrap Library instead of elaborate CSS |
 
 ---
 
@@ -83,13 +86,13 @@ The course introduces core frontend concepts, starting from *HTML, progressing t
 
 ---
 
-## 🧠 Upcoming Topics
-- *Responsive CSS*
-  - Filters
-  - Responsive Web Design Principles
-  - CSS Media Queries
+### 🗓 Nov 10 – BootStrap
+- Revised pseudo-classes, tooltips, transitions, and transforms  
+- Task: Made many different sites
 
 ---
+
+
 
 ## 🧰 Tools Used
 - *VS Code* (with Live Server)
@@ -108,3 +111,4 @@ Grateful to *Mr. Deepak Prasad* and *Mr. Sahil Kumar* for their continuous guida
 *Course:* Frontend Development (HTML, CSS)  
 *Mentors:* Deepak Prasad & Sahil Kumar  
 *Institution:* GLA University,Mathura
+
