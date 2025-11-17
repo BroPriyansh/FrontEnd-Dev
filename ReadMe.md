@@ -19,7 +19,8 @@ The course introduces core frontend concepts, starting from *HTML, progressing t
 7. *CSS Model*
 8. *CSS Pseudo-Classes and Animations*
 9. *Responsive CSS*
-10. BootStrap
+10. *BootStrap*
+11. *JavaScript*
 ---
 
 ## 🗂 Repository Structure
@@ -37,6 +38,7 @@ The course introduces core frontend concepts, starting from *HTML, progressing t
 | css-classes | Pseudo-classes, transitions, animations, and transforms |
 | responsive-css | Filters, responsive web design, and media queries |
 | BootStrap | HTML CSS Library |
+| JavaScript | Basics, Inputs , Operators |
 
 ---
 
@@ -53,6 +55,8 @@ The course introduces core frontend concepts, starting from *HTML, progressing t
 | Oct 31 | *Submission of CSS Model* | Created a calculator layout using Grid and demonstrated gradients |
 | Oct 31 | *Submission of Pseudo Classes* | Implemented pseudo-classes, animations, transitions, and tooltips | 
 | Nov 10 | *Submission of BootStrap* | Use BootStrap Library instead of elaborate CSS |
+| Nov 12 | *Intro to JavaScript* | Simple JS Commands |
+| Nov 14 | *JS Operators* | Use of JS Operators to solve problems |
 
 ---
 
@@ -111,4 +115,5 @@ Grateful to *Mr. Deepak Prasad* and *Mr. Sahil Kumar* for their continuous guida
 *Course:* Frontend Development (HTML, CSS)  
 *Mentors:* Deepak Prasad & Sahil Kumar  
 *Institution:* GLA University,Mathura
+
 
