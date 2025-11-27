@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Q5 - Team Members Directory</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="q5_team.js"></script>
+  <style>
+    .member { padding:6px; border:1px solid #ddd; margin:4px; display:inline-block; width:180px; vertical-align:top; }
+    .mgr { background:#eef; }
+    .contact { display:none; font-size:0.9em; }
+    .highlight { background:#fffbcc; }
+  </style>
+</head>
+<body>
+  <main>
+    <h2>Team Directory</h2>
+    <section id="departments">
+      <div class="department" data-dept="Engineering">
+        <h3 class="dept-title">Engineering</h3>
+        <div class="members">
+          <div class="member mgr" data-manager="alice" data-name="Alice">Alice (Manager)
+            <div class="contact">alice@example.com</div>
+            <div class="reports">
+              <div class="member" data-manager="alice" data-name="Bob">Bob<div class="contact">bob@example.com</div></div>
+              <div class="member" data-manager="alice" data-name="Carol">Carol<div class="contact">carol@example.com</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="department" data-dept="Design">
+        <h3 class="dept-title">Design</h3>
+        <div class="members">
+          <div class="member mgr" data-manager="dave" data-name="Dave">Dave (Manager)
+            <div class="contact">dave@example.com</div>
+            <div class="reports">
+              <div class="member" data-manager="dave" data-name="Eve">Eve<div class="contact">eve@example.com</div></div>
+              <div class="member" data-manager="dave" data-name="Frank">Frank<div class="contact">frank@example.com</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div>
+      <button id="random-employee">Select Random Employee</button>
+      <button id="toggle-team">Collapse/Expand Teams</button>
+    </div>
+  </main>
+</body>
+</html>

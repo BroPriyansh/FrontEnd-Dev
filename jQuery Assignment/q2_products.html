@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Q2 - Product Highlight</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="q2_style.css">
+  <script src="q2_products.js"></script>
+  <style>
+    .product { padding:10px; border:1px solid #ccc; display:inline-block; width:160px; margin:8px; vertical-align:top; }
+    .highlight { background:#fffbcc; }
+    .selected { box-shadow:0 0 8px #f39c12; }
+    .discount { border-color: #e74c3c; }
+  </style>
+</head>
+<body>
+  <main>
+    <h2>Products</h2>
+    <section id="products">
+      <article class="product" data-stock="10" data-discount="20" data-name="Headphones">
+        <h3>Headphones</h3>
+        <p class="price">₹1,200 <span class="tag">20% off</span></p>
+        <button class="favorite">♡</button>
+        <div class="more-info" style="display:none;">Wireless, 20hr battery</div>
+      </article>
+
+      <article class="product" data-stock="0" data-name="Smartwatch">
+        <h3>Smartwatch</h3>
+        <p class="price">₹5,000</p>
+        <button class="favorite">♡</button>
+        <div class="more-info" style="display:none;">Water resistant, heart-rate</div>
+      </article>
+
+      <article class="product" data-stock="5" data-discount="10" data-name="Backpack">
+        <h3>Backpack</h3>
+        <p class="price">₹800 <span class="tag">10% off</span></p>
+        <button class="favorite">♡</button>
+        <div class="more-info" style="display:none;">Lightweight, 20L</div>
+      </article>
+
+      <article class="product" data-stock="2" data-name="Notebook">
+        <h3>Notebook</h3>
+        <p class="price">₹100</p>
+        <button class="favorite">♡</button>
+        <div class="more-info" style="display:none;">200 pages, ruled</div>
+      </article>
+
+      <article class="product" data-stock="1" data-discount="50" data-name="Sunglasses">
+        <h3>Sunglasses</h3>
+        <p class="price">₹300 <span class="tag">50% off</span></p>
+        <button class="favorite">♡</button>
+        <div class="more-info" style="display:none;">UV protected</div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

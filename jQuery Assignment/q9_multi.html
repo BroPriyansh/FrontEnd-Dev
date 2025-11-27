@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Q9 - Multi-jQuery Widgets</title>
+  <!-- Version 1 -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <!-- Save jQuery1 to a variable and call noConflict later in q9_multi.js -->
+  <!-- Version 2 -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="q9_multi.js"></script>
+  <style>
+    .widget { display:inline-block; padding:8px; margin:6px; border:1px solid #ccc; }
+    .active { outline:2px solid #2ecc71; }
+  </style>
+</head>
+<body>
+  <main>
+    <h2>Dashboard Widgets</h2>
+    <div id="carousel" class="widget">Carousel area</div>
+    <div id="modal" class="widget">Modal area</div>
+    <div id="widgets">
+      <div class="widget">Widget A</div>
+      <div class="widget">Widget B</div>
+      <div class="widget">Widget C</div>
+    </div>
+  </main>
+</body>
+</html>
